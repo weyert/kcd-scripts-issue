@@ -1,0 +1,40 @@
+{
+  "dist/kcd-scripts-issue.cjs.js": {
+    "bundled": 806,
+    "minified": 585,
+    "gzipped": 306
+  },
+  "preact/dist/kcd-scripts-issue.cjs.js": {
+    "bundled": 783,
+    "minified": 562,
+    "gzipped": 300
+  },
+  "preact/dist/kcd-scripts-issue.esm.js": {
+    "bundled": 548,
+    "minified": 381,
+    "gzipped": 240,
+    "treeshaked": {
+      "rollup": {
+        "code": 126,
+        "import_statements": 126
+      },
+      "webpack": {
+        "code": 1188
+      }
+    }
+  },
+  "dist/kcd-scripts-issue.esm.js": {
+    "bundled": 571,
+    "minified": 404,
+    "gzipped": 247,
+    "treeshaked": {
+      "rollup": {
+        "code": 125,
+        "import_statements": 125
+      },
+      "webpack": {
+        "code": 1187
+      }
+    }
+  }
+}

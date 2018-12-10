@@ -1,0 +1,55 @@
+{
+  "name": "kcd-scripts-issue",
+  "version": "0.0.0-semantically-released",
+  "description": "Test",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "> 4",
+    "npm": "> 3"
+  },
+  "scripts": {
+    "add-contributor": "kcd-scripts contributors add",
+    "build": "kcd-scripts build",
+    "lint": "kcd-scripts lint",
+    "test": "kcd-scripts test",
+    "test:update": "npm test -- --updateSnapshot --coverage",
+    "validate": "kcd-scripts validate",
+    "setup": "npm install && npm run validate -s"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.2.0",
+    "react": "^16.6.3",
+    "react-datepicker": "^2.0.0",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "kcd-scripts": "^0.48.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "kcd-scripts pre-commit"
+    }
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/kcd-scripts-issue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kentcdodds/kcd-scripts-issue/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/kcd-scripts-issue#readme"
+}
